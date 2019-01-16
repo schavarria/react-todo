@@ -15,10 +15,12 @@ class TodoItem extends Component {
 
     render() {
        return (
-           <li className={this.props.active ? '' : 'complete'} onClick={this.changeStatus}>
-               {this.props.text}
-               <button onClick={this.deleteTodo}>X</button>
-           </li>
+            <div className="listCon">
+                <li className={this.props.active ? '' : 'complete'} onClick={this.changeStatus}>
+                    {this.props.text}
+                </li>
+                <button  onClick={this.deleteTodo}>X</button>
+             </div>
        ) 
     }
 }

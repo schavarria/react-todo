@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Provider } from 'react-redux'
-
+import '../style.css'
 
 import store from '../store'
 import FormComponent from './FormComponent'
@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <Provider store={store}>
        
-          <div>
+          <div className="mainCon">
             <FormComponent/>
             <ListComponent/>
             <FilterComponent/>
