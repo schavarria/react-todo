@@ -19,7 +19,7 @@ class TodoItem extends Component {
                 <li className={this.props.active ? '' : 'complete'} onClick={this.changeStatus}>
                     {this.props.text}
                 </li>
-                <button  onClick={this.deleteTodo}>X</button>
+                <button className="deletebutton" onClick={this.deleteTodo}>X</button>
              </div>
        ) 
     }

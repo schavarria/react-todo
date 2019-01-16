@@ -28,12 +28,12 @@ class Filters extends Component {
 
     render() { 
         return ( 
-            <div>
-                <p>{this.props.count} Items Left: </p>
-                <button onClick={this.all}>All</button>
-                <button onClick={this.active}>Active</button>
-                <button onClick={this.complete}>Complete</button>
-                <button onClick={this.clear}>Clear Completed</button>
+            <div className="filterCon">
+                <p>{this.props.count} Items Left </p>
+                <button className="filterButton" onClick={this.all}>All</button>
+                <button className="filterButton" onClick={this.active}>Active</button>
+                <button className="filterButton" onClick={this.complete}>Complete</button>
+                <button className="filterButton" onClick={this.clear}>Clear Completed</button>
             </div>
          )
     }
